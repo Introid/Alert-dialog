@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/image_view"
+        android:src="@drawable/hardik"
+
+        />
+   <Button
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:id="@+id/save"
+       android:elevation="8dp"
+       android:layout_marginTop="5dp"
+       android:layout_below="@+id/image_view"
+       android:layout_alignParentRight="true"
+       android:background="@drawable/ic_arrow_downward_black_24dp"
+       />
+    <com.like.LikeButton
+        app:icon_type="heart"
+        app:icon_size="18dp"
+        android:elevation="8dp"
+        app:anim_scale_factor="2.0"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/image_view"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/heart_button"
+        app:liked="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="40dp"
+        android:elevation="8dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_share_black_24dp"
+        android:layout_below="@+id/image_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="  create meme  "
+        android:id="@+id/create"
+        android:elevation="8dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_round"
+        android:textColor="#A82B40"
+        android:layout_below="@+id/image_view"
+        />
+
+</RelativeLayout>
